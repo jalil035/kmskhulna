@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.text_orange{
+    color: orange;
+}
+body{
+    font-family: "Timmana", sans-serif;
+}
+/* Bootsrtap Class */
+.card{
+    cursor: pointer;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* Bootsrtap Class */
+
+/* Navbar Start */
+.nav_brand_custom{
+    width: 2.5rem;
+}
+.nav_brand_custom a{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: orange;
+}
+.nav_brand_custom img{
+    width: 100%;
+    text-align: justify;
+}
+/* Navbar End */
+/* Hero Section Start */
+.carousel{
+    margin-top: 4rem;
+}
+.carousel-item h2{
+    font-weight: 800;
+    color: tomato;
+}
+.carousel-item p{
+    font-size: 5vmin;
+    font-weight: 600;
+    color: snow;
+}
+.carousel-item img{
+    width: 100%;
+    height: 95vh;
+}
+/* Hero Section End */
+
+/* about Section start */
+.card_about{
+    width: 19rem;
+}
+.card_about .card_body_about{
+    width: 100%;
+}
+.header_font{
+    font-size: 4vmin;
+    font-weight: 700;
+    color: white;
+    margin: 0 auto;
+}
+.card-text{
+    text-align: justify;
+}
+.frist_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.border_box{
+    width: 12rem;
+    height: .7rem;
+    background: orange;
+}
+.frist_box h1{
+    font-size: 10vmin;
+    font-weight: 800;
+}
+.frist_box h3{
+    font-size: 5vmin;
+    font-weight: 900;
+}
+/* About section end */
+
+/* excellence in execution start */
+.counter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+}
+  
+.counter {
+    font-size: 60px;
+    margin-top: 10px;
+}
+/* excellence in execution end */
+/* Service start */
+.card_service{
+    width: 22rem;
+}
+.card_service .top_border{
+    background: orange;
+    width: 0rem;
+    height: .4rem;
+    transition: all .3s linear;
+    border-radius: .4rem .4rem 0 0;
+}
+.card_service:hover .top_border{
+    width: 100%;
+}
+.card-body{
+    width: 17rem;
+    margin: 0 auto;
+}
+.card-body img{
+    width: 100%;
+    margin: 0 auto;
+}
+.card-body h2{
+    color: orange;
+}
+.border_style{
+    border: .3rem solid orange;
+}
+/* Service end */
+
+/* What say our clint start */
+.what_say{
+    background-image: url(./bg.jpg);
+}
+.card_custom{
+    width: 18rem;
+}
+.card_inner{
+    width: 18rem;
+    overflow: hidden;
+}
+.card_inner img{
+    width: 100%;
+    transition: all 1s ease;
+}
+.card_custom:hover .card_inner img{
+    transform: scale(1.1);
+}
+.card-header i{
+    color: orange;
+}
+/* What say our clint end */
+
+/* Leadership Board start */
+.leader_card{
+    width: 20rem;
+}
+.leader_image{
+    width: 19rem;
+    margin: 0 auto;
+    padding: .3rem;
+    overflow: hidden;
+}
+.leader_image img{
+    width: 100%;
+    border-radius: .5rem;
+    transition: all 1s ease;
+}
+.leader_card:hover .leader_image img{
+    transform: scale(1.2);
+}
+.leader_card_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.leader_card_header:hover h3{
+    color: red;
+}
+.ceo_founder{
+    color: brown;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.director_card{
+    width: 17rem;
+}
+.director_image{
+    width: 15rem;
+    margin: 0 auto;
+    padding: .7rem .3rem 0 .3rem;
+    overflow: hidden;
+}
+.director_image img{
+    width: 100%;
+    border-radius: .4rem;
+    transition: all 1s ease;
+}
+.director_card:hover .director_image img{
+    transform: scale(1.2);
+    border: none;
+}
+.director_card_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.director_card_header:hover h3{
+    color: red;
+}
+.director_text1{
+    font-weight: 600;
+    color: brown;
+}
+.director_text2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: orange;
+}
+/* Ldeadership Board end */
+
+  
