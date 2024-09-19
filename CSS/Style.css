@@ -107,6 +107,9 @@ body{
 /* excellence in execution end */
 
 /* Service start */
+.card-body h2 a{
+    text-decoration: none;
+}
 .service_hedline{
     text-align: center;
     font-weight: 700;
@@ -142,6 +145,9 @@ body{
 }
 .border_style{
     border: .3rem solid orange;
+}
+.card-body a{
+    text-decoration: none;
 }
 /* Service end */
 
