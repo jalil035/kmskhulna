@@ -91,3 +91,39 @@ function removeOpen(index1){
         }
     })
 }
+
+let filterButton = document.querySelectorAll(".filter_button button");
+let filterableCard = document.querySelectorAll(".filter_card .card")
+
+let filterCard = e => {
+    document.querySelector(".active").classList.remove("active");
+    e.target.classList.add("active")
+
+    filterableCard.forEach(card => {
+        card.classList.add("hide")
+        if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
+            card.classList.remove("hide")
+        }
+    })
+    
+}
+
+
+
+filterButton.forEach(button => button.addEventListener("click", filterCard));
+
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach((counter) => {
+  counter.innerText = "0";
+  const updateCounter = () => {
+    const target = +counter.getAttribute("data-target");
+    const count = +counter.innerText;
+    const increment = target / 200;
+    if (count < target) {
+      counter.innerText = `${Math.ceil(count + increment)}`;
+      setTimeout(updateCounter, 1);
+    } else counter.innerText = target;
+  };
+  updateCounter();
+});
