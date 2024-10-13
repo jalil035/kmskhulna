@@ -1,5 +1,17 @@
+//navbear start
+let menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = '0px';
 
+        function toggleMenu(){
+            if(menuList.style.maxHeight === '0px'){
+                menuList.style.maxHeight = '300px';
+            }else{
+                menuList.style.maxHeight = '0px';
+            }
+        }
+//navber end
 
+//Contact Us Form 
 const form = document.querySelector("form");
 let fullName = document.getElementById("name");
 let email = document.getElementById("email");
@@ -60,6 +72,9 @@ form.addEventListener("submit", (e)=>{
 
     // sendMail();
 })
+//Contact us From End
+
+//Accordion Start
 
 const accrodingBx = document.querySelectorAll(".accroding_bx")
 
@@ -90,10 +105,12 @@ function removeOpen(index1){
         des.style.height = "0px"
         }
     })
-}
+};
+//Accordion End
 
+//Image Filter Start
 let filterButton = document.querySelectorAll(".filter_button button");
-let filterableCard = document.querySelectorAll(".filter_card .card")
+let filterableCard = document.querySelectorAll(".filter_card .gallery_card")
 
 let filterCard = e => {
     document.querySelector(".active").classList.remove("active");
@@ -104,9 +121,12 @@ let filterCard = e => {
         if(card.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
             card.classList.remove("hide")
         }
-    })
+    });
     
-}
+};
+//Image Filter End
+
+
 
 
 

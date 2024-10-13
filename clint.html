@@ -6,6 +6,7 @@
     <title>service Khulna Mechanical Service</title>
     <link rel="icon" href="./Fabicon-icon.png">
     <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="CSS/mediaquearry.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Google Font -->
@@ -21,27 +22,22 @@
 </head>
 <body>
 <!-- Navbar Design Start -->
-    <nav class="navbar navbar-expand-md bg-light border-bottom">
-        <div class="container-fluid">
-            <div class="nav_brand_custom">
-                <a href="#" class="navbar-brand"><img src="./LOGO.png" alt="Logo">Khulna Mechanical Service</a>
-            </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my_menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="my_menu">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link " href="./index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/ourservice.html">Service</a></li>
-                    <li class="nav-item"><a class="nav-link active text-primary" href="#">Our Clint</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallary.html">Gallery</a></li>
-
-                </ul>
-            </div>
-        </div>
-
-    </nav>
+<nav class="fixed-top">
+    <div class="logo">
+        <img src="LOGO.png" alt="">
+        <h1>Khulna Mechanical Service</h1>
+    </div>
+    <ul id="menuList">
+        <li class="nav-item"><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="./ourservice.html">Service</a></li>
+        <li><a class="active text-primary" href="clint.html">Our Clint</a></li>
+        <li><a href="gallary.html">Gallery</a></li>
+    </ul>
+    <div class="menu_icon">
+        <i class='bx bx-menu bx-tada' onclick="toggleMenu()" ></i>
+    </div>
+</nav>
 <!-- Navbar Design End -->
 
 <!-- What say our clint start -->
@@ -52,18 +48,18 @@
     <div class="row mt-5">
         <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up"
         data-aos-duration="2000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
                     <img src="./Clint/BHEL_logo.svg.png" alt="BHEL">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold">BHEL</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half' ></i>
                     <i class='bx bx-star'> 3.9</i> <br>
-                    <p class="text_alighment">“Khulna Mechanical Service (KMS) consistently delivers high-quality work, demonstrating professionalism and reliability at every stage. Their contribution to the Maitree Super Thermal Power Project has been crucial, and we value their partnership in achieving our project milestones.”</p>
+                    <span>“Khulna Mechanical Service (KMS) consistently delivers high-quality work, demonstrating professionalism and reliability at every stage. Their contribution to the Maitree Super Thermal Power Project has been crucial, and we value their partnership in achieving our project milestones.”</span>
                 </div>
             </div>
         </div>
@@ -71,56 +67,55 @@
 
         <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up"
         data-aos-duration="2000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/indwell.jpeg" alt="Indwell" class="img-fluid img-thumbnail">
+                    <img src="./Clint/indwell.jpeg" alt="Indwell">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold">Indwell</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half' ></i>
                     <i class='bx bx-star'> 3.5</i> <br>
-                    <p class="text_alighment">“Khulna Mechanical Service (KMS) stands out for their meticulous attention to detail and proactive problem-solving. Their contributions at the Maitree Super Thermal Power Project have been invaluable, and we appreciate their commitment to meeting our project's.”</p>
+                    <span>“Khulna Mechanical Service (KMS) stands out for their meticulous attention to detail and proactive problem-solving. Their contributions at the Maitree Super Thermal Power Project have been invaluable, and we appreciate their commitment to meeting our project's.”</span>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up"
         data-aos-duration="2000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/pmpl.png" alt="Power Mach" class="img-fluid img-thumbnail">
+                    <img src="./Clint/pmpl.png" alt="Power Mach">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold">Power Mach</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half'> 4.8</i> <br>
-                    <p class="text_alighment">“Khulna Mechanical Service (KMS) has been a dependable partner in the Maitree Super Thermal Power Project. Their efficiency, quality of work, and ability to meet tight deadlines have greatly contributed to our project's progress and overall success.”</p>
+                    <span>“Khulna Mechanical Service (KMS) has been a dependable partner in the Maitree Super Thermal Power Project. Their efficiency, quality of work, and ability to meet tight deadlines have greatly contributed to our project's progress and overall success. KMS always first piosity client requirement”</span>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up"
         data-aos-duration="2000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/nde.jpeg" alt="BHEL" class="img-fluid img-thumbnail">
+                    <img src="./Clint/nde.jpeg" alt="BHEL">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold">NDE</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half'> 4.5</i> <br>
-                    <p class="text_alighment">“Khulna Mechanical Service (KMS) has proven to be an essential partner in our projects. Their commitment to delivering high-quality work, along with their reliability and expertise, has ensured the smooth and successful completion of our most demanding tasks.”
-
-                    </p>
+                    <span>“Khulna Mechanical Service (KMS) has proven to be an essential partner in our projects. Their commitment to delivering high-quality work, along with their reliability and expertise, has ensured the smooth and successful completion of our most demanding tasks.”
+                    </span>
                 </div>
             </div>
         </div>
@@ -129,18 +124,18 @@
     <div class="row mt-5">
         <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up"
         data-aos-duration="2000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/aqua.png" alt="BHEL" class="img-fluid img-thumbnail">
+                    <img src="./Clint/aqua.png" alt="BHEL">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold">Aqua Refinery</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half' ></i>
                     <i class='bx bx-star'> 3.9</i> <br>
-                    <p class="text_alighment">“Khulna Mechanical Service (KMS) has consistently delivered outstanding service in our projects. Their expertise, attention to detail, and dedication to quality have made them a reliable partner, ensuring that our operations run smoothly and efficiently.”</p>
+                    <span>“Khulna Mechanical Service (KMS) has consistently delivered outstanding service in our projects. Their expertise, attention to detail, and dedication to quality have made them a reliable partner, ensuring that our operations run smoothly and efficiently. KMS always first piosity client requirement and job will done”</span>
                 </div>
             </div>
         </div>
@@ -148,54 +143,54 @@
 
         <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up"
         data-aos-duration="2000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/Bangal-electric-ltd.jpg" alt="Indwell" class="img-fluid img-thumbnail">
+                    <img src="./Clint/Bangal-electric-ltd.jpg" alt="Indwell">
                 </div>
-                <div class="card-header">
-                    <h2 class="text-primary fw-bold fs-4">Bengal Electrical ltd</h2>
+                <div class="card_header">
+                    <h2 class="text-primary fw-bold">Bengal Electrical ltd</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half' ></i>
                     <i class='bx bx-star'> 3.5</i> <br>
-                    <p class="text_alighment">“Khulna Mechanical Service (KMS) consistently exceeds our expectations with their professionalism and quality of work. Their timely execution and attention to detail have been instrumental in the success of our projects, solidifying them as a valued partner in our operations.”</p>
+                    <span>“Khulna Mechanical Service (KMS) consistently exceeds our expectations with their professionalism and quality of work. Their timely execution and attention to detail have been instrumental in the success of our projects, solidifying them as a valued partner in our operations.”</span>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up"
         data-aos-duration="2000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/cc7.jpg" alt="Power Mach" class="img-fluid img-thumbnail">
+                    <img src="./Clint/cc7.jpg" alt="Power Mach">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold">CC-7</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half'> 4.8</i> <br>
-                    <p class="text_alighment">“Khulna Mechanical Service (KMS) has proven to be a reliable partner in the Sahajalal Fertilizer project. Their dedication to quality and timely delivery has significantly enhanced our operations, making them an essential part of our team.”</p>
+                    <span>“Khulna Mechanical Service (KMS) has proven to be a reliable partner in the Sahajalal Fertilizer project. Their dedication to quality and timely delivery has significantly enhanced our operations, making them an essential part of our team. I hopefully KMS grow more”</span>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up"
         data-aos-duration="2000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
                     <img src="./Clint/densol.png" alt="BHEL">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold fs-4">Densol Construction</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half'> 4.5</i> <br>
-                    <p class="text_alighment">“Khulna Mechanical Service (KMS) consistently delivers high-quality results that meet our exacting standards. Their ability to handle complex tasks with efficiency and precision has made them a key partner in our construction projects, ensuring successful outcomes every time.”</p>
+                    <span>“Khulna Mechanical Service (KMS) consistently delivers high-quality results that meet our exacting standards. Their ability to handle complex tasks with efficiency and precision has made them a key partner in our construction projects, ensuring successful outcomes every time.”</span>
                 </div>
             </div>
         </div>
@@ -208,36 +203,36 @@
 
         <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up"
         data-aos-duration="2000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/HV Equipment.jpg" alt="Indwell" class="img-fluid img-thumbnail">
+                    <img src="./Clint/HV Equipment.jpg" alt="Indwell">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold fs-4">H.V Equipment Ltd</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half' ></i>
                     <i class='bx bx-star'> 3.5</i> <br>
-                    <p class="text_alighment">“Khulna Mechanical Service (KMS) has been an indispensable partner, providing top-notch service and expertise. Their consistent ability to meet our project requirements with precision and efficiency has strengthened our operations and ensured the timely completion of our projects.”</p>
+                    <span>“Khulna Mechanical Service (KMS) has been an indispensable partner, providing top-notch service and expertise. Their consistent ability to meet our project requirements with precision and efficiency has strengthened our operations and ensured the timely completion of our projects.”</span>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-3" data-aos="fade-up"
         data-aos-duration="2000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/power hydro.png" alt="Power Mach" class="img-fluid img-thumbnail">
+                    <img src="./Clint/power hydro.png" alt="Power Mach">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold">Power hydro</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half'> 4.8</i> <br>
-                    <p class="text_alighment">“Khulna Mechanical Service (KMS) has demonstrated exceptional capability in handling our projects with skill and efficiency. Their commitment to delivering high-quality work on time has made them a valuable partner in our industrial operations.”</p>
+                    <span>“Khulna Mechanical Service (KMS) has demonstrated exceptional capability in handling our projects with skill and efficiency. Their commitment to delivering high-quality work on time has made them a valuable partner in our industrial operations. KMS do her Job well done”</span>
                 </div>
             </div>
         </div>
@@ -314,7 +309,7 @@
                     </div>
                         
                     <div class="text_field field">
-                        <textarea name="" id="massage" cols="20" rows="4" placeholder="Leave Your Message Here" class="item" autocomplete="off"></textarea>
+                        <textarea name="" id="massage" cols="60" rows="5" placeholder="Leave Your Message Here" class="item" autocomplete="off"></textarea>
                     </div>
         
                     <button type="submit">Send Message</button>

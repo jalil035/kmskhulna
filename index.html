@@ -6,6 +6,7 @@
     <title>index Khulna Mechanical Service</title>
     <link rel="icon" href="./Fabicon-icon.png">
     <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="stylesheet" href="CSS/mediaquearry.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Google Font -->
@@ -21,48 +22,43 @@
 </head>
 <body>
 <!-- Navbar Design Start -->
-    <nav class="navbar navbar-expand-md bg-light border-bottom fixed-top">
-        <div class="container-fluid">
-            <div class="nav_brand_custom">
-                <a href="#" class="navbar-brand"><img src="./LOGO.png" alt="Logo">Khulna Mechanical Service</a>
-            </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#my_menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            <div class="collapse navbar-collapse" id="my_menu">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active text-primary" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./ourservice.html">Service</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Our Clint</a></li>
-                    <li class="nav-item"><a class="nav-link" href="gallary.html">Gallery</a></li>
-
-                </ul>
-            </div>
-        </div>
-
-    </nav>
+<nav class="fixed-top">
+    <div class="logo">
+        <img src="LOGO.png" alt="">
+        <h1>Khulna Mechanical Service</h1>
+    </div>
+    <ul id="menuList">
+        <li class="nav-item"><a class="active text-primary" href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="./ourservice.html">Service</a></li>
+        <li><a href="clint.html">Our Clint</a></li>
+        <li><a href="gallary.html">Gallery</a></li>
+    </ul>
+    <div class="menu_icon">
+        <i class='bx bx-menu bx-tada' onclick="toggleMenu()" ></i>
+    </div>
+</nav>
 <!-- Navbar Design End -->
 
 <!-- Image Slider (Hero Section) Start -->
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="4000">
-        <img src="./Slider Image/maitree 2.jpg" class="d-block w-100" alt="Maitree">
+        <img src="./Slider Image/maitree 2.jpg" class="d-block w-100 h-50" alt="Maitree">
         <div class="carousel-caption d-none d-md-block">
             <h2>KHULNA MECHANICAL SERVICE</h2>
             <p>Maitree Super Thermal Power Project </p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="./Slider Image/aqua 1.jpeg" class="d-block w-100" alt="Aqua">
+        <img src="./Slider Image/aqua 1.jpeg" class="d-block w-100 h-50" alt="Aqua">
         <div class="carousel-caption d-none d-md-block">
             <h2>KHULNA MECHANICAL SERVICE</h2>
             <p>Aqua Refinery</p>
         </div>
       </div>
       <div class="carousel-item" data-bs-interval="3000">
-        <img src="./Slider Image/rupsha 1.jpg" class="d-block w-100" alt="Rupsha">
+        <img src="./Slider Image/rupsha 1.jpg" class="d-block w-100 h-50" alt="Rupsha">
         <div class="carousel-caption d-none d-md-block">
             <h2>KHULNA MECHANICAL SERVICE</h2>
             <p>Rupsha 800 MW CCPP Project</p>
@@ -82,17 +78,17 @@
 
 <!-- About Section Start -->
 <header class="about">
-    <div class="container mt-5 mb-5">
+    <div class="container mt-5 mb-5 top_margin">
         <div class="row">
 
             <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-2 d-flex justify-content-center" data-aos="fade-right" data-aos-offset="200" data-aos-duration="800">
-                <div class="card card_about" id="about">
-                    <div class="card-body bg-info-subtle card_body_about">
-                        <div class="card-header d-flex align-items-center bg-warning">
-                            <span class="material-symbols-outlined text-primary fs-2">person</span>
+                <div class="card_about" id="about">
+                    <div class="card_body_about">
+                        <div class="about_card_header">
+                            <span class="material-symbols-outlined text-primary fs-1 fw-bold">person</span>
                             <span class="header_font">ABOUT US</span>
                         </div>
-                            <p class="card-text">
+                            <p class="about_body_text">
                             <strong>Khulna Mechanical Service,</strong> established in 2005. is an fabrication and erection solutions in the industrial sector. Which have 19 years of experience, We specialize in a wide range of services including Tank Erection, Pipe Fitting, Steel Structure Fabrication, Painting, Sandblasting, Alignment work, and Rental services for Scaffolding Materials, Heavy Equipment, Air Compressor Machines, Generators and more.    
                             </p>
                     </div>
@@ -101,13 +97,13 @@
                       
 
             <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-2 d-flex justify-content-center" data-aos="flip-up" data-aos-offset="200" data-aos-duration="800">
-                <div class="card card_about">
-                    <div class="card-body bg-info-subtle card_body_about">
-                        <div class="card-header d-flex align-items-center bg-warning">
-                            <span class="material-symbols-outlined text-primary fs-2">psychology</span>
+                <div class="card_about">
+                    <div class="card_body_about">
+                        <div class="about_card_header">
+                            <span class="material-symbols-outlined text-primary fs-1 fw-bold">psychology</span>
                             <span class="header_font">OUR MISSION</span>
                         </div>
-                            <p class="card-text">
+                            <p class="about_body_text">
                             Our mission at <strong>Khulna Mechanical Service,</strong> is to be the preferred partner for industrial fabrication and erection services, renowned for our commitment to quality, integrity, and customer satisfaction. We aim to exceed client expectations by delivering innovative, cost-effective solutions cost-effective solutions cost-effective solutions that enhance productivity, safety, and sustainability in every project we undertake.                                
                             </p>
                     </div>
@@ -116,13 +112,13 @@
                       
 
             <div class="col-lg-4 col-md-6 col-sm-12 col-12 mt-2 d-flex justify-content-center" data-aos="fade-left" data-aos-offset="200" data-aos-duration="800">
-                <div class="card card_about">
-                    <div class="card-body bg-info-subtle card_body_about">
-                        <div class="card-header d-flex align-items-center bg-warning">
-                            <span class="material-symbols-outlined text-primary fs-2">eye_tracking</span>
+                <div class="card_about">
+                    <div class="card_body_about">
+                        <div class="about_card_header">
+                            <span class="material-symbols-outlined text-primary fs-1 fw-bold">eye_tracking</span>
                             <span class="header_font">OUR VISION</span>
                         </div>
-                            <p class="card-text">
+                            <p class="about_body_text">
                             Our vision is become a global leader of fabrication and erection industry, recognized for our technical expertise, reliability, and ethical business practices. We to continuously expand our foster long-term partnerships, positive change the communities we serve. communities we serve Through continuous improvement and innovation, we strive to set new standards of excellence and create enduring value for our clients.                                
                         </p>
                     </div>
@@ -136,7 +132,7 @@
 <!-- About Section end -->
 
 <!-- excellence in execution Start -->
- <div class="container-fluid bg-dark text-light">
+<div class="container-fluid bg-dark text-light">
     <div class="row">
         <h1 class="text-center fw-bold fs-1 mt-3 mb-5">EXCELLENCE IN EXECUTION</h1>
 
@@ -181,45 +177,54 @@
 <!-- excellence in execution end -->
 
 <!-- service start -->
- <div class="container mt-5">
-    <h2 class="text-center text_orange fw-bold">Our Febrication & Erection Service</h2>
+<div class="container mt-5">
+    <h2 class="header_text text_orange">Our Febrication & Erection Service</h2>
     <hr class="w-50 m-auto mb-3">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Tank.jpg" alt="Tank" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Tank</h2>
-                    <p class="card-text">Oil tank, Chemical tank, FireFighting tank, Water tank</p>
-                    <a href="/ourservice.html#tank">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="Service/Tank.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Tank</h1>
+                        <p>Oil tank, Chemical tank, FireFighting tank, Water tank</p>
+                        <a href="/ourservice.html#tank">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/steel-structure.jpg" alt="Structure" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Still Structure</h2>
-                    <p class="card-text">SS Still Structure Febrication & Erection</p>
-                    <a href="/ourservice.html#ss">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="./Service/steel-structure.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Still Structure</h1>
+                        <p>SS Still Structure Febrication & Erection</p>
+                        <a href="/ourservice.html#ss">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-in" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/pipe febrication.jpg" alt="Pipe" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Piping</h2>
-                    <p class="card-text">FireFighting, Water, Checmical, Oil, Gas</p>
-                    <a href="/ourservice.html#pipe">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="./Service/pipe febrication.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Piping</h1>
+                        <p>FireFighting, Water, Checmical, Oil, Gas</p>
+                        <a href="/ourservice.html#pipe">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -227,40 +232,49 @@
 
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/structure.jpg" alt="Tank" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Structure</h2>
-                    <p class="card-text">Structural & Sheeting industrial, construction & corporate</p>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="./Service/structure.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Structure</h1>
+                        <p>Structural & Sheeting industrial, construction & corporate</p>
                     <a href="/ourservice.html#structure">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/painting.jpg" alt="Structure" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Painting</h2>
-                    <p class="card-text">Poly Euro Paint and other All kind of Painting and Sen Blasting</p>
-                    <a href="/ourservice.html#painting">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/painting.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Painting</h1>
+                        <p>Poly Euro Paint and other All kind of Painting and Sen Blasting</p>
+                        <a href="/ourservice.html#painting">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-in-up" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/scaffolding-components.jpg" alt="Pipe" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Scaffolding</h2>
-                    <p class="card-text">Industrial & Construction Scaffolding </p>
-                    <a href="/ourservice.html#scafolding">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/scaffolding-components.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Scaffolding</h1>
+                        <p>Industrial & Construction Scaffolding</p>
+                        <a href="/ourservice.html#scafolding">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -269,45 +283,54 @@
 <!-- service end -->
 
 <!-- Rental Service start -->
- <div class="container mt-5">
-    <h2 class="text-center text_orange fw-bold">Rental Service</h2>
+<div class="container mt-5">
+    <h2 class="header_text text_orange">Rental Service</h2>
     <hr class="w-25 m-auto mb-3">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-in-down" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Rental/scaffolding-components.jpg" alt="Tank" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Scaffolding</h2>
-                    <p class="card-text">Scaffolding Material (Different Size Pipe & Clamp)</p>
-                    <a href="/ourservice.html#scafolding1">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Rental/scaffolding-components.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Scaffolding</h1>
+                        <p>Scaffolding Material (Different Size Pipe & Clamp)</p>
+                        <a href="/ourservice.html#scafolding1">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-in-down" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Rental/Meterial.jpg" alt="Structure" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Instalment</h2>
-                    <p class="card-text">All kind of Instalment Industrial, construction</p>
-                    <a href="/ourservice.html#instalment">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Rental/Meterial.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Instalment</h1>
+                        <p>All kind of Instalment Industrial, construction</p>
+                        <a href="/ourservice.html#instalment">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-in-down" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Rental/Heavy Equipment.jpg" alt="Pipe" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold fs-3">Heavy Equipment</h2>
-                    <p class="card-text">All kind of Heavy Equipment industrial & construction</p>
-                    <a href="/ourservice.html#heavy">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Rental/Heavy Equipment.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Heavy Equipment</h1>
+                        <p>All kind of Heavy Equipment industrial & construction</p>
+                        <a href="/ourservice.html#heavy">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -315,40 +338,49 @@
 
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-out" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Rental/air-compressors.jpg" alt="Tank" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold fs-3">Air Compressor</h2>
-                    <p class="card-text">Air Compressors for Spray Painting and Blusting</p>
-                    <a href="/ourservice.html#compressor">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Rental/air-compressors.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Air Compressor</h1>
+                        <p>Air Compressors for Spray Painting and Blasting</p>
+                        <a href="/ourservice.html#compressor">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-out" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Rental/Generator.jpg" alt="Structure" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Generator</h2>
-                    <p class="card-text">Different type of Electrical Generator</p>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Rental/air-compressors.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Generator</h1>
+                        <p>Different type of Electrical Generator</p>
                     <a href="/ourservice.html#generator">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-out" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Rental/Crane.jpg" alt="Pipe" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold fs-4">Crane</h2>
-                    <p class="card-text">5-10ton, 10-50ton, 50-100ton to 300 Ton</p>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Rental/Crane.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Crane</h1>
+                        <p>5-10ton, 10-50ton, 50-100ton to 300 Ton</p>
                     <a href="/ourservice.html#crane">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -358,44 +390,53 @@
 
 <!-- Supply Service start -->
 <div class="container mt-5">
-    <h2 class="text-center text_orange fw-bold">Supply Service</h2>
+    <h2 class="header_text text_orange">Supply Service</h2>
     <hr class="w-25 m-auto mb-3">
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-out-down" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Supply/oil.jpg" alt="Tank" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Oil</h2>
-                    <p class="card-text">All kind of Engin Oil For Industrial & construction</p>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Supply/oil.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Oil</h1>
+                        <p>All kind of Engin Oil For Industrial & construction</p>
                     <a href="/ourservice.html#oil">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-out-down" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Supply/raw-materials-ezgif.com-webp-to-jpg-converter.jpg" alt="Structure" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Row Meterial</h2>
-                    <p class="card-text">All kind of Raw Material for Industrial & Construction</p>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Supply/raw-materials-ezgif.com-webp-to-jpg-converter.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Row Meterial</h1>
+                        <p>All kind of Raw Material for Industrial & Construction</p>
                     <a href="/ourservice.html#row">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-out-down" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Supply/LPG.jpg" alt="Pipe" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold fs-3">LPG Gas Cylinder</h2>
-                    <p class="card-text">All kind of LPG Gas Cylinder of Industrial</p>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Supply/LPG.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">LPG Gas Cylinder</h1>
+                        <p>All kind of LPG Gas Cylinder of Industrial</p>
                     <a href="/ourservice.html#gas">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -403,40 +444,49 @@
 
     <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-out-right" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Supply/Local.jpg" alt="Tank" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold fs-4">Industrial Local Parts</h2>
-                    <p class="card-text">All Kind of Industrial Local Parts including Febrication & Erection</p>
-                    <a href="/ourservice.html#parts">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Supply/Local.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Industrial Local Parts</h1>
+                        <p>All Kind of Industrial Local Parts including Febrication & Erection</p>
+                        <a href="/ourservice.html#parts">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
         
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-out-right" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Supply/Oxygen.jpg" alt="Structure" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Oxygen</h2>
-                    <p class="card-text">Different Siz Industrial Oxygen Cylinder</p>
-                    <a href="/ourservice.html#oxygen">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Supply/Oxygen.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Oxygen</h1>
+                        <p class="card-text">Different Siz Industrial Oxygen Cylinder</p>
+                        <a href="/ourservice.html#oxygen">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-4 mt-2 d-flex justify-content-center" data-aos="zoom-out-right" data-aos-offset="200" data-aos-duration="800">
-            <div class="card card_service">
+            <div class="service_card">
                 <div class="top_border"></div>
-                <div class="card-body">
-                    <img src="./Service/Supply/Manpower.jpg" alt="Pipe" class="img-fluid rounded-circle p-1 border_style">
-                    <hr>
-                    <h2 class="card-title fw-bold">Man Power</h2>
-                    <p class="card-text">Manpower for Engineer, Electrical, Welder, Forman, Supervisor & General Worker</p>
-                    <a href="/ourservice.html#man">Read More....</a>
+                <div class="card_body">
+                    <div class="card_img">
+                        <img src="/Service/Supply/Manpower.jpg" alt="" class="border_style p-1">
+                    </div> <hr>
+                    <div class="card_text">
+                        <h1 class="text_orange fw-bold">Man Power</h1>
+                        <p class="card-text">Manpower for Engineer, Electrical, Welder, Forman, Supervisor & General Worker</p>
+                        <a href="/ourservice.html#man">Read More....</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -445,79 +495,79 @@
 <!-- Supply service end -->
 
 <!-- What say our clint start -->
- <div class="container-fluid mt-5 what_say">
-    <h2 class="fw-bold text_orange text-center"> WHAT SAY CLINT ABOUT US</h2>
-    <hr class="m-auto w-50">
+<div class="container-fluid mt-5 what_say">
+    <h2 class="header_text mt-5"> WHAT SAY CLINT ABOUT US</h2>
+    <hr class="m-auto w-25">
     <div class="row mt-5">
 
-        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center" data-aos="fade-up"
+        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center mb-5" data-aos="fade-up"
         data-aos-duration="3000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/BHEL_logo.svg.png" alt="BHEL" class="img-fluid img-thumbnail">
+                    <img src="./Clint/BHEL_logo.svg.png" alt="BHEL">
                 </div>
-                <div class="card-header">
-                    <h2 class="text-primary fw-bold">BHEL</h2>
+                <div class="card_header">
+                    <h2 class="text-primary">BHEL</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half' ></i>
-                    <i class='bx bx-star'> 3.9</i> <br>
+                    <i class='bx bx-star'>/ 3.9</i> <br>
                     <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quos laborum animi, asperiores sapiente optio.</span>
                 </div>
             </div>
         </div>
         
 
-        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center" data-aos="fade-up"
+        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center mb-5" data-aos="fade-up"
         data-aos-duration="3000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/indwell.jpeg" alt="Indwell" class="img-fluid img-thumbnail">
+                    <img src="./Clint/indwell.jpeg" alt="Indwell">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold">Indwell</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star-half' ></i>
-                    <i class='bx bx-star'> 3.5</i> <br>
+                    <i class='bx bx-star'>/ 3.5</i> <br>
                     <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quos laborum animi, asperiores sapiente optio.</span>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center" data-aos="fade-up"
+        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center mb-5" data-aos="fade-up"
         data-aos-duration="3000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/pmpl.png" alt="Power Mach" class="img-fluid img-thumbnail">
+                    <img src="./Clint/pmpl.png" alt="Power Mach">
                 </div>
-                <div class="card-header">
+                <div class="card_header">
                     <h2 class="text-primary fw-bold">Power Mach</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
-                    <i class='bx bxs-star-half'> 4.8</i> <br>
+                    <i class='bx bxs-star-half'>/ 4.8</i> <br>
                     <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quos laborum animi, asperiores sapiente optio.</span>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center" data-aos="fade-up"
+        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center mb-5" data-aos="fade-up"
         data-aos-duration="3000">
-            <div class="card card_custom">
+            <div class="card_custom">
                 <div class="card_inner">
-                    <img src="./Clint/nde.jpeg" alt="BHEL" class="img-fluid img-thumbnail">
+                    <img src="./Clint/nde.jpeg" alt="BHEL">
                 </div>
-                <div class="card-header">
-                    <h2 class="text-primary fw-bold">BHEL</h2>
+                <div class="card_header">
+                    <h2 class="text-primary fw-bold">NDE</h2>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
                     <i class='bx bxs-star' ></i>
-                    <i class='bx bxs-star-half'> 4.5</i> <br>
+                    <i class='bx bxs-star-half'>/ 4.5</i> <br>
                     <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem quos laborum animi, asperiores sapiente optio.</span>
                 </div>
             </div>
@@ -528,20 +578,20 @@
 <!-- What say our clint end -->
 
 <!-- Leadership start -->
- <div class="container-fluid mt-5" style="background-color: rgb(15, 15, 70);">
-    <h2 class="fw-bold text_orange text-center"> LEADERSHIP BOARD</h2>
+<div class="container mt-5">
+    <h2 class="header_text mt-5"> LEADERSHIP BOARD</h2>
     <hr class="m-auto w-25">
     <div class="row">
         <div class="col-12 d-flex justify-content-center mt-4" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="2000">
-            <div class="card leader_card">
-                <div class="leader_image">
-                    <img src="./Organigation Chart/Milon.jpg" alt="Milon" class="img-fluid">
+            <div class="director_card">
+                <div class="director_image">
+                    <img src="./Organigation Chart/Milon.jpg" alt="Milon">
                 </div>
                 <hr>
-                <div class="leader_card_header">
-                    <h3 class="fw-bold">Hadeyat Ullaha Milon</h3>
-                    <span class="ceo_founder">CEO and Founder</span> <br>
-                    <span class="text_orange fs-5 fw-bold">KHULNA MECHAICAL SERVICE</span>
+                <div class="director_card_header">
+                    <h3 class="director_name">Hadeyat Ullaha Milon</h3>
+                    <span class="director_text1">CEO and Founder</span> <br>
+                    <span class="director_text2">KHULNA MECHAICAL SERVICE</span>
                 </div>
             </div>
         </div>
@@ -549,26 +599,28 @@
 
     <div class="row mt-4">
 
-        <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-lg-end mt-4" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-            <div class="card director_card">
+        <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-lg-end mt-4 mb-4" data-aos="flip-up" data-aos-offset="300" data-aos-duration="1000">
+            <div class="director_card">
                 <div class="director_image">
-                    <img src="./Organigation Chart/sajib.jpg" alt="Milon" class="img-fluid rounded-circle p-1 border_style"> <hr>
+                    <img src="./Organigation Chart/sajib.jpg" alt="Milon">
                 </div>
+                <hr>
                 <div class="director_card_header">
-                    <h3 class="fw-bold fs-4">Md. Sajib Miah</h3>
+                    <h3 class="director_name">Md. Sajib Miah</h3>
                     <span class="director_text1">Director (Technical)</span>
                     <span class="director_text2">KHULNA MECHAICAL SERVICE</span>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-lg-start mt-4" data-aos="fade-left" data-aos-offset="200" data-aos-easing="ease-in-sine">
-            <div class="card director_card">
+        <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center justify-content-lg-start mt-4 mb-4" data-aos="flip-up" data-aos-offset="300" data-aos-duration="1000">
+            <div class="director_card">
                 <div class="director_image">
-                    <img src="./Organigation Chart/1-copy--10R.JPG" alt="Milon" class="img-fluid rounded-circle p-1 border_style"> <hr>
+                    <img src="./Organigation Chart/1-copy--10R.JPG" alt="Milon">
                 </div>
+                <hr>
                 <div class="director_card_header">
-                    <h3 class="fw-bold fs-4">MD Tipu Sultan Shaikh</h3>
+                    <h3 class="director_name">MD Tipu Sultan Shaikh</h3>
                     <span class="director_text1">Director (Accounts & Finance)</span>
                     <span class="director_text2">KHULNA MECHAICAL SERVICE</span>
                 </div>
@@ -579,12 +631,13 @@
     <div class="row ">
 
         <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center mt-4 mb-4" data-aos="flip-up" data-aos-offset="300" data-aos-duration="1000">
-            <div class="card director_card">
+            <div class="director_card">
                 <div class="director_image">
-                    <img src="./Organigation Chart/kowshik.jpg" alt="Milon" class="img-fluid rounded-circle p-1 border_style"> <hr>
+                    <img src="./Organigation Chart/kowshik.jpg" alt="Kowshik">
                 </div>
+                <hr>
                 <div class="director_card_header">
-                    <h3 class="fw-bold fs-4">K.M Kowshik Ahmmed</h3>
+                    <h3 class="director_name">K.M Kowshik Ahmmed</h3>
                     <span class="director_text1">Purchase & General Manager</span>
                     <span class="director_text2">KHULNA MECHAICAL SERVICE</span>
                 </div>
@@ -592,12 +645,13 @@
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center mt-4 mb-4" data-aos="flip-up" data-aos-offset="300" data-aos-duration="1200">
-            <div class="card director_card">
+            <div class="director_card">
                 <div class="director_image">
-                    <img src="./Organigation Chart/asif.jpg" alt="Milon" class="img-fluid rounded-circle p-1 border_style"> <hr>
+                    <img src="./Organigation Chart/asif.jpg" alt="Milon" >
                 </div>
+                <hr>
                 <div class="director_card_header">
-                    <h3 class="fw-bold fs-4">Md. Asif Hossain</h3>
+                    <h3 class="director_name">Md. Asif Hossain</h3>
                     <span class="director_text1">Accounts Manager</span>
                     <span class="director_text2">KHULNA MECHAICAL SERVICE</span>
                 </div>
@@ -605,25 +659,27 @@
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center mt-4 mb-4" data-aos="flip-up" data-aos-offset="300" data-aos-duration="1400">
-            <div class="card director_card">
+            <div class="director_card">
                 <div class="director_image">
-                    <img src="./Organigation Chart/amrito.jpg" alt="Milon" class="img-fluid rounded-circle p-1 border_style"> <hr>
-                </div>
+                    <img src="./Organigation Chart/amrito.jpg" alt="Milon">
+                </div> 
+                <hr>
                 <div class="director_card_header">
-                    <h3 class="fw-bold fs-4">Amrito Day</h3>
+                    <h3 class="director_name">Amrito Day</h3>
                     <span class="director_text1">Chief Engineer</span>
                     <span class="director_text2">KHULNA MECHAICAL SERVICE</span>
                 </div>
             </div>
         </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center mt-4 mb-4" data-aos="flip-up" data-aos-offset="300" data-aos-duration="1600">
-            <div class="card director_card">
+        <div class="col-sm-12 col-md-6 col-lg-3 d-flex justify-content-center mt-4 mb-4" data-aos="flip-up" data-aos-offset="300" data-aos-duration="1000">
+            <div class="director_card">
                 <div class="director_image">
-                    <img src="./Organigation Chart/Rashedul.jpg" alt="Milon" class="img-fluid rounded-circle p-1 border_style"> <hr>
-                </div>
+                    <img src="./Organigation Chart/Rashedul.jpg" alt="Milon">
+                </div> 
+                <hr>
                 <div class="director_card_header">
-                    <h3 class="fw-bold fs-4">Rashedul Islam</h3>
+                    <h3 class="director_name">Rashedul Islam</h3>
                     <span class="director_text1">Technical GM</span>
                     <span class="director_text2">KHULNA MECHAICAL SERVICE</span>
                 </div>
@@ -634,8 +690,8 @@
 <!-- Leadership end -->
 
 <!-- footer start -->
- <div class="container-fluid">
-    <div class="row bg_orange px-5">
+<div class="container-fluid">
+    <div class="row bg_orange footer_siz">
         <div class="col-sm-12 col-md-6 col-lg-6 mt-4 d-flex justify-content-center">
             <div>
                 <div class="footer_logo">
@@ -664,7 +720,7 @@
 
 
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6 mb-5 d-flex justify-content-center ">
+        <div class="col-sm-12 col-md-6 col-lg-6 mb-5 d-flex justify-content-center align-items-center ">
             <section class="contact">
                 <h1>FOR INQUIRY</h1>
                 <form action="#">
@@ -694,14 +750,13 @@
                     </div>
                         
                     <div class="text_field field">
-                        <textarea name="" id="massage" cols="20" rows="4" placeholder="Leave Your Message Here" class="item" autocomplete="off"></textarea>
+                        <textarea name="" id="massage" cols="60" rows="5" placeholder="Leave Your Message Here" class="item" autocomplete="off"></textarea>
                     </div>
         
                     <button type="submit">Send Message</button>
                     
                 </form>
             </section>
-        
         </div>
     </div>
  </div>
