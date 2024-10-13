@@ -551,15 +551,16 @@ form button:hover{
 }
 .filter_card{
     display: flex;
-    justify-content: center;
+    justify-content: first baseline;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 1rem;
     gap: .8rem;
+    margin: 1rem auto;
 }
 .gallery_card{
     position: relative;
-    width: 42rem;
+    width: 36rem;
     border-radius: 1rem;
     margin: 1rem auto;
     overflow: hidden;
@@ -573,7 +574,7 @@ form button:hover{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    top: 21rem;
+    top: 13rem;
     left: 0;
     border-radius: 0 0 .6rem .6rem;
     opacity: 0;
@@ -596,9 +597,8 @@ form button:hover{
     transform: scale(1.2);
 }
 .card_title{
-    font-size: 3.5rem;
-    line-height: .5rem;
-    margin-top: 1.5rem;
+    font-size: 2rem;
+    text-wrap: wrap;
 }
 .card_title_250mw{
     font-size: 2.5rem;
@@ -607,7 +607,7 @@ form button:hover{
     font-weight: 600;
 }
 .card_text{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 .gallery_card.hide{
     display: none;

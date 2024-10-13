@@ -6,13 +6,32 @@
         font-size: 60%;
     }
     .gallery_card{
-        width: 35rem;
+        width: 32rem;
+    }
+    .gallery_card .card_body{
+        top: 15rem;
+    }
+    .card_title{
+        font-size: 3rem;
+    }
+    .card_text{
+        font-size: 1.8rem;
     }
 }
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    .gallery_card .card_body{
+        top: 13rem;
+    }
+    .card_title{
+        font-size: 2rem;
+    }
+    .card_text{
+        font-size: 1.2rem;
+    }
+}
 @media screen and (max-width: 768px) {
     html{
-        font-size: 40%;
+        font-size: 60%;
     }
     .logo h1{
         font-size: 3rem;
@@ -20,7 +39,7 @@
 }
 @media screen and (max-width: 576px) {
     html{
-        font-size: 40%;
+        font-size: 57%;
     }
     .logo h1{
         font-size: 2rem;
@@ -49,6 +68,15 @@
     }
     form button{
         font-size: 2rem;
+    }
+    .gallery_card .card_body{
+        top: 15rem;
+    }
+    .card_title{
+        font-size: 2rem;
+    }
+    .card_text{
+        font-size: 1.2rem;
     }
 
 }
