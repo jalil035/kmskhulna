@@ -1,0 +1,100 @@
+@media screen and (max-width: 1399px) {
+}
+@media screen and (max-width: 1199px) {
+  html {
+    font-size: 55%;
+  }
+  .gallery_card {
+    width: 32rem;
+  }
+  .gallery_card .card_body {
+    top: 15rem;
+  }
+  .card_title {
+    font-size: 3rem;
+  }
+  .card_text {
+    font-size: 1.8rem;
+  }
+  .card_custom {
+    width: 27rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .gallery_card .card_body {
+    top: 13rem;
+  }
+  .card_title {
+    font-size: 2rem;
+  }
+  .card_text {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+  .logo h1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 57%;
+  }
+  .logo h1 {
+    font-size: 2rem;
+  }
+  .about_header span {
+    font-size: 2rem;
+  }
+  .about_header i {
+    font-size: 2rem;
+  }
+  .body_text {
+    font-size: 1.5rem;
+  }
+  .footer_siz {
+    padding: 1rem 2rem;
+  }
+  .footer_logo h2 {
+    font-size: 3rem;
+  }
+  .footer_logo img {
+    width: 4rem;
+  }
+  .head_office {
+    font-size: 3rem;
+  }
+  .address {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+  .site_office {
+    font-size: 3rem;
+  }
+  .contact h1 {
+    font-size: 3rem;
+  }
+  form button {
+    font-size: 2rem;
+  }
+  .gallery_card .card_body {
+    top: 15rem;
+  }
+  .card_title {
+    font-size: 2rem;
+  }
+  .card_text {
+    font-size: 1.2rem;
+  }
+  .filter_button button {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .project_header {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
